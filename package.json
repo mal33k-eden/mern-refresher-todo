@@ -1,0 +1,18 @@
+{
+  "name": "mern-refresher",
+  "version": "1.0.0",
+  "description": "a minimal app purposely designed as a refresher on the mern stack ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0",
+    "nodemon": "^2.0.19"
+  }
+}
