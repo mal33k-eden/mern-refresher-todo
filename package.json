@@ -1,7 +1,7 @@
 {
   "name": "mern-refresher",
   "version": "1.0.0",
-  "description": "a minimal app purposely designed as a refresher on the MERN stack ",
+  "description": "A minimal app designed for purpose. I am using this design process as a refresher on the MERN stack ",
   "main": "index.js",
   "scripts": {
     "start": "node backend/server",
