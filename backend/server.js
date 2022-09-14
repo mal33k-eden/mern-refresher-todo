@@ -2,12 +2,14 @@ const express = require('express')
 const { errorHandler } = require('./middlewares/errorMiddleware')
 const app = express()
 require('dotenv').config()
+const connectDB = require('./config/db')
 const port = process.env.SERVER_PORT  
 const todosRoutes = require('./routes/todosRoutes')
  
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
+connectDB()
 app.use('/api/todos', todosRoutes)
 
 app.get('/', (req, res)=>{
