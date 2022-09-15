@@ -5,12 +5,14 @@ require('dotenv').config()
 const connectDB = require('./config/db')
 const port = process.env.SERVER_PORT  
 const todosRoutes = require('./routes/todosRoutes')
+const userRoutes = require('./routes/userRoutes')
  
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 connectDB()
 app.use('/api/todos', todosRoutes)
+app.use('/api/users', userRoutes)
 
 app.get('/', (req, res)=>{
     return res.json('hello ')
